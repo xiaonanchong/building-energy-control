@@ -122,7 +122,7 @@ while True:
 
     # boring book-keeping
     running_reward = reward_sum if running_reward is None else running_reward * 0.99 + reward_sum * 0.01
-    print 'resetting env. episode reward total was',reward_sum,'. running mean:',running_reward
+    print ('resetting env. episode reward total was',reward_sum,'. running mean:',running_reward)
     if episode_number % 100 == 0: pickle.dump(model, open('save.p', 'wb'))
     reward_sum = 0
     observation = env.reset() # reset env
