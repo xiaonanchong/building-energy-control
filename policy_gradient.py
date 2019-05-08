@@ -33,4 +33,6 @@ def policy_forward(x):
   logp = np.dot(model['w2'],h)
   p = sigmoid(logp)
   return p, h
+
+def loss()
   
