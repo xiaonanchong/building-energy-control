@@ -24,5 +24,13 @@ rmsprop_cache = {k: np.zeros_like(v) for k,v in model.items()}
 def sigmoid(x):
   return 1.0 / (1.0 + np.exp(-x))
 
-def discount_rewards(r):
+def advantage(r):
+  """ take 1D float array of rewards in samples trajectory and compute the advantage """
+  
+def policy_forward(x):
+  h = np.dot(model['w1'],x)
+  h[h<0] = 0 # ReLU
+  logp = np.dot(model['w2'],h)
+  p = sigmoid(logp)
+  return p, h
   
