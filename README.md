@@ -1,1 +1,1 @@
-
+in this project, we use policy gradient method to train the building energy control network. [BCVTB](https://simulationresearch.lbl.gov/bcvtb/Download) is adopted to co-simulate and exchange data iteratively between Energyplus and our policy network.  
