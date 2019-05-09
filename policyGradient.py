@@ -5,6 +5,8 @@ input_size = 2*100
 hidden_size = 100
 output_size = 1
 
+target_temperature = 24
+
 num_trace = 100
 trace_length = 100
 max_iteration = 1000000
