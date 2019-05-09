@@ -1,0 +1,30 @@
+External Interface,
+  PtolemyServer;
+  
+    ExternalInterface:Schedule,
+      TSetCoo,
+      Temperature,
+      24;
+      
+    ExternalInterface:Schedule,
+      TSetHea,
+      Temperature,
+      20;
+   
+ThermostatSetpoint:DualSetPoint,
+      DualSetPoint,
+      BCVTB-SP-TH,
+      BCVTB-SP-TC;
+      
+Output:Variable,
+      TSetHea,
+      Schedule Value,
+      TimeStep;
+      
+  Output:Variable,
+      TSetCoo,
+      Schedule Value,
+      TimeStep;
+      
+  Timestep,
+      4;
