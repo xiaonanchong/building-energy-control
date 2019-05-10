@@ -1,4 +1,4 @@
-In this project, we use policy gradient method to train the building energy control network. [BCVTB](https://simulationresearch.lbl.gov/bcvtb/Download) is adopted to co-simulate and exchange data iteratively between Energyplus and our policy network.  
+In this project, we use policy gradient method to train the building energy control network. [Building Controls Virtual TestBed](https://simulationresearch.lbl.gov/bcvtb/Download) is adopted to co-simulate and exchange data iteratively between Energyplus and our policy network.  
 
 ## Installation of BCVTB  
 #### Windows  
@@ -13,4 +13,6 @@ install java
 $ sudo apt-get update  
 $ java -version # check if java already installed  
 $ sudo apt-get install openjdk-8-jre  
-$ sudo apt-get install icedtea-8-plugin  
+$ sudo apt-get install icedtea-8-plugin (option)  
+install BCVTB    
+$ java -jar bcvtb-install-linux64-v1.6.0.jar  
