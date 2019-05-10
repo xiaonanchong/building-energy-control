@@ -9,5 +9,8 @@ open BCVTB.jar in /bin and open example xml files through 'File->open'
 #### Linux  
 download BCVTB  
 $ wget http://github.com/lbl-srg/bcvtb/releases/download/v1.6.0/bcvtb-install-linux64-v1.6.0.jar  
-download java environment  
-$ wget https://download.oracle.com/otn/java/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/jre-8u202-linux-x64.tar.gz  
+install java  
+$ sudo apt-get update  
+$ java -version # check if java already installed  
+$ sudo apt-get install openjdk-8-jre  
+$ sudo apt-get install icedtea-8-plugin  
